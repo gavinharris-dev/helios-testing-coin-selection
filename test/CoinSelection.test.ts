@@ -54,10 +54,6 @@ describe('Test the simple Coin Selection program', async () => {
   });
 
   test('CoinSelection - Lovelace and Multiple Asset across multiple UTxOs', async () => {
-    const { Assets, MintingPolicyHash, NetworkEmulator, Value } = await import(
-      '@hyperionbt/helios'
-    );
-
     const network = new NetworkEmulator();
 
     const a1 = new Assets();
